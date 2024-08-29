@@ -1,0 +1,23 @@
+@startuml
+!theme crt-green
+actor staff
+actor buyer
+actor admin
+
+usecase "List Product" as UC1
+usecase "Remove Product" as UC2
+usecase "Purchase" as UC3
+usecase "Register Buyer" as UC4
+usecase "Unregister Buyer" as UC5
+usecase "Manage Seller" as UC6
+usecase "Manage Product" as UC7
+
+seller--UC1 
+seller--UC2 
+Buyer--UC3
+admin--UC4
+admin--UC5
+admin--UC6
+admin--UC7
+
+@enduml
